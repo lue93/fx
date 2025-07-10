@@ -1,4 +1,4 @@
-package br.com.lue93.fx.usecase.fiat.exchange;
+package br.com.lue93.fx.application.usecase.fiat.exchange;
 
 import br.com.lue93.fx.domain.fiat.FiatExchangeService;
 import br.com.lue93.fx.domain.fiat.FiatInputData;

@@ -4,7 +4,7 @@ import br.com.lue93.fx.domain.fiat.FiatInputData;
 import br.com.lue93.fx.domain.fiat.FiatOutputData;
 
 import br.com.lue93.fx.domain.rate.WiseRateServiceException;
-import br.com.lue93.fx.usecase.fiat.exchange.FiatExcxhangeUseCase;
+import br.com.lue93.fx.application.usecase.fiat.exchange.FiatExcxhangeUseCase;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;

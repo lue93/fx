@@ -1,9 +1,9 @@
-package br.com.lue93.fx.ui;
+package br.com.lue93.fx.adapters;
 
 import br.com.lue93.fx.domain.fiat.FiatInputData;
 import br.com.lue93.fx.domain.fiat.FiatOutputData;
 import br.com.lue93.fx.domain.rate.WiseRateServiceException;
-import br.com.lue93.fx.usecase.fiat.exchange.FiatExcxhangeUseCase;
+import br.com.lue93.fx.application.usecase.fiat.exchange.FiatExcxhangeUseCase;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
