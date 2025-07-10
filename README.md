@@ -22,6 +22,8 @@ Portanto, ao trocar 100 dólares americanos a uma taxa de câmbio de R$4,99 por 
 
 Este projeto adota os princípios da **Arquitetura Limpa**, proposta por Robert C. Martin. A Arquitetura Limpa é uma abordagem de desenvolvimento de software que visa criar sistemas sustentáveis, flexíveis e testáveis.
 
+![design solucao](https://github.com/lue93/fx/blob/main/src/main/resources/Captura%20de%20tela%202025-07-10%20203059.png?raw=true)
+
 ### Filosofia da Arquitetura Limpa
 
 A Arquitetura Limpa preconiza a organização do código em camadas, de forma que cada camada tenha uma responsabilidade clara e bem definida. As principais camadas são:
