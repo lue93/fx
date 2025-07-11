@@ -1,6 +1,6 @@
 package br.com.lue93.fx.infra.spring.exception;
 
-import br.com.lue93.fx.domain.rate.WiseRateServiceException;
+import br.com.lue93.fx.application.services.rate.WiseRateServiceException;
 import feign.RetryableException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;

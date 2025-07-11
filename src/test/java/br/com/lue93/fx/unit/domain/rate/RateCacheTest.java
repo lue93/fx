@@ -1,9 +1,9 @@
 package br.com.lue93.fx.unit.domain.rate;
 
-import br.com.lue93.fx.domain.fiat.Symbol;
-import br.com.lue93.fx.domain.rate.Rate;
-import br.com.lue93.fx.domain.rate.RateCache;
-import br.com.lue93.fx.unit.infra.rate.mock.RateMock;
+import br.com.lue93.fx.domain.fiat.entities.Symbol;
+import br.com.lue93.fx.domain.rate.entities.Rate;
+import br.com.lue93.fx.domain.rate.entities.RateCache;
+import br.com.lue93.fx.unit.application.services.rate.mock.RateMock;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

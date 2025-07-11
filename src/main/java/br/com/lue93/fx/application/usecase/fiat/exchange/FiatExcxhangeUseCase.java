@@ -1,12 +1,15 @@
 package br.com.lue93.fx.application.usecase.fiat.exchange;
 
-import br.com.lue93.fx.domain.fiat.FiatExchangeService;
-import br.com.lue93.fx.domain.fiat.FiatInputData;
-import br.com.lue93.fx.domain.fiat.FiatOutputData;
-import br.com.lue93.fx.domain.rate.*;
-import br.com.ungaratto93.fx.domain.rate.*;
-import br.com.lue93.fx.infra.fiat.FiatExchangeServiceWiseRates;
-import br.com.lue93.fx.infra.rate.ProxyRateService;
+import br.com.lue93.fx.domain.fiat.services.FiatExchangeService;
+import br.com.lue93.fx.domain.fiat.vo.FiatInputData;
+import br.com.lue93.fx.domain.fiat.vo.FiatOutputData;
+import br.com.lue93.fx.domain.rate.entities.Rate;
+import br.com.lue93.fx.application.services.rate.WiseRateServiceException;
+import br.com.lue93.fx.domain.rate.vo.RateInput;
+import br.com.lue93.fx.domain.rate.vo.RateOutPut;
+import br.com.lue93.fx.domain.rate.vo.RatesMapper;
+import br.com.lue93.fx.application.services.fiat.FiatExchangeServiceWiseRates;
+import br.com.lue93.fx.application.services.rate.ProxyRateService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
