@@ -7,6 +7,7 @@ on:
 
 jobs:
   release:
+    name: Release App
     runs-on: ubuntu-latest
 
     steps:
@@ -34,29 +35,12 @@ jobs:
         id: timestamp
         run: echo "::set-output name=ts::$(date +%y.%m.%d)"
 
-      - name: Executar script de versionamento
-        run: |
-          cd .github/workflows/
-          ls -la
-          chmod +x versionamento.sh
-          ./versionamento.sh ${{ github.event.pull_request.head.ref }}
-      - name: Commit and Push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token para autenticação
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add pom.xml
-          git commit -m "Bump version"
-          git push
-
       - name: Ler versão com Maven
         id: version
         run: |
           VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
           echo "VERSION=$VERSION"
           echo "version=$VERSION" >> $GITHUB_OUTPUT
-
 
       - name: Capture commit messages
         run: |
