@@ -45,7 +45,7 @@ else
 fi
 
 # Gerando a nova versão
-nova_versao="${ano_corrente}.${minor}.${patch}"
+nova_versao="${major}.${minor}.${patch}"
 echo "Nova versão: $nova_versao"
 mvn versions:set -DnewVersion=$nova_versao
 
