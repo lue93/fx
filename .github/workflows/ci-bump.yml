@@ -8,6 +8,8 @@ on:
 jobs:
   bump-app:
     name: Bump App
+    permissions:
+      contents: write
     if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'develop'
     runs-on: ubuntu-latest
     steps:
