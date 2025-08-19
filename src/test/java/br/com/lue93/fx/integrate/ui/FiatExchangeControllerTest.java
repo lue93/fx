@@ -1,16 +1,15 @@
 package br.com.lue93.fx.integrate.ui;
 
-import br.com.lue93.fx.domain.fiat.FiatInputData;
-import br.com.lue93.fx.domain.fiat.Symbol;
-import br.com.lue93.fx.domain.rate.WiseRateServiceException;
-import br.com.ungaratto93.fx.domain.rate.*;
+import br.com.lue93.fx.domain.fiat.vo.FiatInputData;
+import br.com.lue93.fx.domain.fiat.entities.Symbol;
+import br.com.lue93.fx.application.services.rate.WiseRateServiceException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import br.com.lue93.fx.ui.FiatExchangeController;
+import br.com.lue93.fx.adapters.controllers.FiatExchangeController;
 
 
 @SpringBootTest

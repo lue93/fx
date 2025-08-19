@@ -1,10 +1,10 @@
 package br.com.lue93.fx.integrate.usecase;
 
-import br.com.lue93.fx.domain.fiat.FiatInputData;
-import br.com.lue93.fx.domain.fiat.FiatOutputData;
+import br.com.lue93.fx.domain.fiat.vo.FiatInputData;
+import br.com.lue93.fx.domain.fiat.vo.FiatOutputData;
 
-import br.com.lue93.fx.domain.rate.WiseRateServiceException;
-import br.com.lue93.fx.usecase.fiat.exchange.FiatExcxhangeUseCase;
+import br.com.lue93.fx.application.services.rate.WiseRateServiceException;
+import br.com.lue93.fx.application.usecase.fiat.exchange.FiatExcxhangeUseCase;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
@@ -12,8 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static br.com.lue93.fx.domain.fiat.Symbol.BRL;
-import static br.com.lue93.fx.domain.fiat.Symbol.USD;
+import static br.com.lue93.fx.domain.fiat.entities.Symbol.BRL;
+import static br.com.lue93.fx.domain.fiat.entities.Symbol.USD;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)

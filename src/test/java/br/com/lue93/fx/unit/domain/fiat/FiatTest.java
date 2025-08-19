@@ -1,7 +1,7 @@
 package br.com.lue93.fx.unit.domain.fiat;
 
-import br.com.lue93.fx.domain.fiat.Fiat;
-import br.com.lue93.fx.domain.fiat.Symbol;
+import br.com.lue93.fx.domain.fiat.entities.Fiat;
+import br.com.lue93.fx.domain.fiat.entities.Symbol;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

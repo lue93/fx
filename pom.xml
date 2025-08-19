@@ -9,9 +9,9 @@
 		<relativePath/>
 		<!--  lookup parent from repository  -->
 	</parent>
-	<groupId>br.com.ungaratto93</groupId>
+	<groupId>br.com.lue93</groupId>
 	<artifactId>fx</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.10.0</version>
 	<name>fx</name>
 	<description>Calculadora de cambio</description>
 	<properties>
@@ -36,7 +36,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.30</version>
+			<version>1.18.36</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
