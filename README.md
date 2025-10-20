@@ -1,5 +1,4 @@
 
-
 # FX - API de Câmbio
 
 A FX é uma API de câmbio **SEM FINS COMERCIAIS** que utiliza o serviço da Wise para fornecer taxas de câmbio atualizadas.
