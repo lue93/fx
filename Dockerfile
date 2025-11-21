@@ -3,7 +3,7 @@ FROM eclipse-temurin:21-jdk-alpine AS jre-builder
 
 # Cria uma runtime mínima usando jlink
 RUN jlink \
-    --add-modules java.base \
+    --add-modules ALL-MODULE-PATH \
     --strip-debug \
     --no-header-files \
     --no-man-pages \
