@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -26,6 +27,7 @@ import static io.opentelemetry.semconv.ResourceAttributes.HOST_ID;
 import static io.opentelemetry.semconv.ResourceAttributes.SERVICE_NAME;
 
 @Configuration
+@Profile("!test")
 public class OpenTelemetryConfig {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OpenTelemetryConfig.class);
