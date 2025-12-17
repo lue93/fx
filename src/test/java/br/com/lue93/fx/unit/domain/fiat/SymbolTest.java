@@ -3,6 +3,7 @@ package br.com.lue93.fx.unit.domain.fiat;
 import br.com.lue93.fx.domain.fiat.entities.Symbol;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.context.ActiveProfiles;
 
 public class SymbolTest {
 

@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static br.com.lue93.fx.domain.fiat.entities.Symbol.BRL;
@@ -17,6 +18,7 @@ import static br.com.lue93.fx.domain.fiat.entities.Symbol.USD;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
+@ActiveProfiles("test")
 public class FiatExcxhangeUseCaseTest {
 
     /* Delega a responsabilidade de criacao de objetos, para o mecanismo de DI do Spring.
