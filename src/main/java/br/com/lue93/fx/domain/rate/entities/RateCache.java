@@ -26,7 +26,14 @@ public class RateCache {
     private static final Logger LOGGER = LoggerFactory.getLogger(FiatExchangeServiceWiseRates.class);
 
     public RateCache() {
+    }
 
+    public long getLimitTimeForRateInCache() {
+        return limitTimeForRateInCache;
+    }
+
+    public void setLimitTimeForRateInCache(long limitTimeForRateInCache) {
+        this.limitTimeForRateInCache = limitTimeForRateInCache;
     }
 
     public void putRateOnCache(Symbol source, Symbol target, double value, String time) {
