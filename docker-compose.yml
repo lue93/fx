@@ -1,0 +1,14 @@
+version: '3.3'
+
+networks:
+  shared-network:
+    external: true
+
+services:
+  app:
+    image: fx:latest
+    container_name: "fx"    
+    ports:
+      - "8082:8082"
+    networks:
+      - shared-network
