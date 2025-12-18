@@ -37,23 +37,23 @@ public class OpenTelemetryConfig {
     private final io.opentelemetry.api.logs.Logger logger;
 
     @Value("${otel.exporter.otlp.logs.endpoint}")
-    private static String urlLogs;
+    private String urlLogs;
 
     @Value("${otel.exporter.otlp.spans.endpoint}")
-    private static String urlSpans;
+    private String urlSpans;
     
     @Value("${otel.exporter.otlp.metrics.endpoint}")
-    private static String urlMetrics;
+    private String urlMetrics;
 
-    private static OpenTelemetrySdk  instance;
+    private OpenTelemetrySdk  instance;
+
     public OpenTelemetryConfig(OpenTelemetry openTelemetry) {
         this.otel = openTelemetry;
         this.tracer = openTelemetry.getTracer(INSTRUMENTATION_NAME);
         this.logger = openTelemetry.getLogsBridge().get("br.com.lue93.fx");
     }
 
-    public static OpenTelemetry autoconfiguredSdk() {
-        
+    public OpenTelemetry autoconfiguredSdk() {
         Resource resource =
                 Resource.getDefault().merge(
                         Resource.builder().put(SERVICE_NAME, "FX-OtlpExporter")
@@ -107,12 +107,12 @@ public class OpenTelemetryConfig {
         return sdk;
     }
 
-    public static OpenTelemetrySdk getInstance() {
+    public OpenTelemetrySdk getInstance() {
         return instance;
     }
 
-    @Bean
-    public static SdkLoggerProvider getLoggerProvider() {
+
+    public SdkLoggerProvider getLoggerProvider() {
         return getInstance().getSdkLoggerProvider();
     }
 

@@ -11,7 +11,7 @@ docker rmi -f fx:latest || true
 export DOCKER_BUILDKIT=1
 export $(cat .env | xargs)
 docker build --pull --no-cache \
-  --build-arg hostname=ms-offers-importer \
+  --build-arg hostname=fx \
   --build-arg SPRING_PROFILES_ACTIVE=$SPRING_PROFILES_ACTIVE \
   --build-arg INSTANCE_ID=$HOSTNAME \
   --build-arg OTEL_SERVICE_NAME=fx \

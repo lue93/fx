@@ -15,7 +15,6 @@ public class MicrometerConfig {
     @Value("${otel.exporter.otlp.metrics.endpoint}")
     private String otlpMetricsEndpoint;
 
-    @Bean
     MeterRegistryCustomizer<MeterRegistry> metricsCommonTags(Environment env) {
         String appName = env.getProperty("management.otlp.metrics.application.name", "fx");
         return otlpMeterRegistry -> otlpMeterRegistry.config().commonTags("application", appName);
