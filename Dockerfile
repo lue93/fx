@@ -27,7 +27,6 @@ COPY pom.xml ./
 
 # Copia arquivos de configuração do Maven
 COPY ./src ./src
-COPY ./.env ./.env
 COPY ./logback.xml ./logback.xml
 
 # Compila e gera o JAR
