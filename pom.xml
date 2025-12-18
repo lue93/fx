@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>br.com.lue93</groupId>
 	<artifactId>fx</artifactId>
-	<version>1.7.0</version>
+	<version>1.8.0</version>
 	<name>fx</name>
 	<description>Calculadora de cambio</description>
 	<properties>
