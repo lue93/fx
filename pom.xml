@@ -78,7 +78,7 @@
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-tracing-bridge-otel</artifactId>
-            <version>1.2.0</version> <!-- compatível com Spring Boot 3.4 -->
+            <version>1.6.1</version> <!-- compatível com Spring Boot 3.4 -->
         </dependency>
 
         <dependency>
